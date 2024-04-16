@@ -39,10 +39,10 @@ int main(void){
     for (int i = 0; i < num; i++){
         if (i){
             fprintf(fp, " ");
-            printf(" ");
+ //           printf(" ");
         }
         fprintf(fp, "%d", line[i]);
-        printf("%d", line[i]);        
+ //       printf("%d", line[i]);        
 
     }
     fclose(fp);
