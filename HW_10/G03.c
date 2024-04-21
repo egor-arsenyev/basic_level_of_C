@@ -13,7 +13,7 @@ int main(void){
         return 1;
     }
 
-    fseek (fp, -1, SEEK_END);
+    fseek (fp, -2, SEEK_END);
 
     int line_width = ftell(fp);
     int line[line_width];
@@ -39,10 +39,10 @@ int main(void){
     for (int i = 0; i < num; i++){
         if (i){
             fprintf(fp, " ");
- //           printf(" ");
+            printf(" ");
         }
         fprintf(fp, "%d", line[i]);
- //       printf("%d", line[i]);        
+        printf("%d", line[i]);        
 
     }
     fclose(fp);
